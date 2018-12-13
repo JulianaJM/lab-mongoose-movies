@@ -1,0 +1,10 @@
+<h2>Celebrities</h2>
+{{#each celebrities}}
+<div style="width: 33.333%;">
+  <div>
+    <p>{{this.name}}</p>
+    <a href="/celebrities/{{this._id}}">see more</a>
+    <a href="/celebrities/{{this._id}}/edit">edit</a>
+    <a href="/celebrities/{{this._id}}/remove">delete</a>
+  </div>
+</div>{{/each}}
