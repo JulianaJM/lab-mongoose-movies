@@ -60,6 +60,9 @@ app.use("/", index);
 const celebrities = require("./routes/celebrities");
 app.use("/celebrities", celebrities);
 
+const movies = require("./routes/movies");
+app.use("/movies", movies);
+
 // error handler
 app.use((err, req, res, next) => {
   // set locals, only providing error in development
